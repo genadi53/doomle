@@ -1,0 +1,53 @@
+.page-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin-top: 1em;
+  padding: 1em 0;
+  border-top: 2px solid #ddd;
+
+  .helplink {
+    margin: 0 0 10px;
+  }
+
+  .logininfo {
+    text-align: center;
+    a {
+      color: #0070a8;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+
+  .sitelink {
+    display: block;
+    text-align: center;
+
+    a {
+      color: #0070a8;
+      text-decoration: none;
+
+      img {
+        width: 112px;
+        vertical-align: middle;
+        border: 0;
+      }
+    }
+  }
+
+  .tool_dataprivacy {
+    a {
+      color: #0070a8;
+      text-decoration: none;
+    }
+  }
+
+  .mobile_app {
+    a {
+      color: #0070a8;
+      text-decoration: none;
+    }
+  }
+}
