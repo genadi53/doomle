@@ -1,12 +1,12 @@
 import React from "react";
-import styles from "./MenuItem.module.scss";
+import MenuItem from "./MenuItem";
 const options = [
-  { name: "frequency", title: "" },
-  { name: "centralTrend", title: "" },
-  { name: "distraction", title: "" },
-  { name: "correlation", title: "" },
-  { name: "logs", title: "" },
-  { name: "grades", title: "" },
+  { name: "grades", title: "Display Grades" },
+  { name: "frequency", title: "Show Frequency Analysis" },
+  { name: "centralTrend", title: "Show Central Trend Information" },
+  { name: "distraction", title: "Show Distraction Information" },
+  { name: "correlation", title: "Show Correlation Analysis" },
+  { name: "logs", title: "Get Data From Logs" },
 ];
 // https://ptsdoomle20220422194729.azurewebsites.net/api/frequency
 // https://ptsdoomle20220422194729.azurewebsites.net/api/centralTrend
@@ -25,11 +25,7 @@ const Menu = () => {
       }}
     >
       {options.map((option) => {
-        return (
-          <div className={styles["menu-item"]}>
-            <p className={styles["title"]}>{option.name}</p>
-          </div>
-        );
+        return <MenuItem key={option.name} menuOption={option} />;
       })}
     </div>
   );

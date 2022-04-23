@@ -6,11 +6,7 @@ function Header() {
     <header role="banner" className={styles["navbar"]}>
       <nav role="navigation" className={styles["navbar-inner"]}>
         <div className={styles["container-fluid"]}>
-          <a
-            className={styles["brand"]}
-            title="Home"
-            href="http://81.161.243.12/bgmoodle/"
-          >
+          <a className={styles["brand"]} title="Home" href="/">
             DOOMLE
           </a>
           <div className={styles["usermenu"]}>
