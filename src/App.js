@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Menu from "./components/menu/Menu";
-import Results from "./components/results/Results";
+import DataMapper from "./components/dataMapper/DataMapper";
 import Content from "./components/content/Content";
 function App() {
   return (
@@ -26,13 +26,11 @@ function App() {
                     fontSize: 24,
                   }}
                 >
-                  Content Go Here!
-                  <hr />
                   <Menu />
                 </div>
               }
             />
-            <Route path="/display/:type" element={<Results />} />
+            <Route path="/display/:type" element={<DataMapper />} />
           </Routes>
         </Content>
         <Footer />

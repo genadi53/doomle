@@ -1,11 +1,11 @@
 import React from "react";
 import MenuItem from "./MenuItem";
 const options = [
-  { name: "grades", title: "Display Grades" },
   { name: "frequency", title: "Show Frequency Analysis" },
   { name: "centralTrend", title: "Show Central Trend Information" },
   { name: "distraction", title: "Show Distraction Information" },
   { name: "correlation", title: "Show Correlation Analysis" },
+  { name: "grades", title: "Display Grades" },
   { name: "logs", title: "Get Data From Logs" },
 ];
 // https://ptsdoomle20220422194729.azurewebsites.net/api/frequency

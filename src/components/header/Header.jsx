@@ -11,7 +11,7 @@ function Header() {
           </a>
           <div className={styles["usermenu"]}>
             <span className={styles["login"]}>
-              You are not logged in. (
+              You do not need to be logged in. (
               <a href="http://81.161.243.12/bgmoodle/login/index.php">Log in</a>
               )
             </span>

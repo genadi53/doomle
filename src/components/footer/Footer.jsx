@@ -6,7 +6,7 @@ function Footer() {
     <footer className={styles["page-footer"]}>
       <p className="helplink"></p>
       <div className={styles["logininfo"]}>
-        You are not logged in. (
+        You do not need to be logged in. (
         <a href="http://81.161.243.12/bgmoodle/login/index.php">Log in</a>)
       </div>
       <div className={styles["sitelink"]}>
@@ -15,11 +15,6 @@ function Footer() {
             src="http://81.161.243.12/bgmoodle/theme/image.php/clean/core/1545917344/moodlelogo"
             alt="Moodle logo"
           />
-        </a>
-      </div>
-      <div className={styles["tool_dataprivacy"]}>
-        <a href="http://81.161.243.12/bgmoodle/admin/tool/dataprivacy/summary.php">
-          Data retention summary
         </a>
       </div>
       <a

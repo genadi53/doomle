@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import styles from "./Results.module.scss";
+import styles from "./DataMapper.module.scss";
 
-function Results() {
+function DataMapper() {
   // let isSubscribed = useRef(true);
   const { type } = useParams();
   const [data, setData] = useState([]);
@@ -15,7 +15,7 @@ function Results() {
         `https://ptsdoomle20220422194729.azurewebsites.net/api/${type}`
       );
       const fetchData = await res.json();
-      console.log(fetchData);
+      // console.log(fetchData);
       setData(fetchData);
       setLoading(false);
     };
@@ -67,7 +67,7 @@ function Results() {
 
   return (
     <div>
-      <h1>{JSON.stringify(type)}</h1>
+      <h1>{type.toUpperCase()}</h1>
 
       {loading ? (
         <div>Loading...</div>
@@ -78,4 +78,4 @@ function Results() {
   );
 }
 
-export default Results;
+export default DataMapper;
