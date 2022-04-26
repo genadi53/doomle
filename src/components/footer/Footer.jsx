@@ -11,10 +11,7 @@ function Footer() {
       </div>
       <div className={styles["sitelink"]}>
         <a title="Moodle" href="http://moodle.org/">
-          <img
-            src="http://81.161.243.12/bgmoodle/theme/image.php/clean/core/1545917344/moodlelogo"
-            alt="Moodle logo"
-          />
+          <img src="Doomle.png" alt="Moodle logo" />
         </a>
       </div>
       <a
