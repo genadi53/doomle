@@ -1,14 +1,16 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "./Header.module.scss";
 
 function Header() {
+  const navigate = useNavigate();
   return (
     <header role="banner" className={styles["navbar"]}>
       <nav role="navigation" className={styles["navbar-inner"]}>
         <div className={styles["container-fluid"]}>
           {/*<a className={styles["brand"]} title="Home" href="/">
               DOOMLE
-  </a>*/}
+          </a>*/}
           <img
             className={styles["brand"]}
             style={{
@@ -17,15 +19,16 @@ function Header() {
               paddingTop: 0,
               // border: 0,
             }}
-            src="Doomle2.png"
+            src="/Doomle2.png"
             alt="Moodle logo"
+            onClick={() => {
+              navigate("/");
+            }}
           />
 
           <div className={styles["usermenu"]}>
             <span className={styles["login"]}>
-              You do not need to be logged in. (
-              <a href="http://81.161.243.12/bgmoodle/login/index.php">Log in</a>
-              )
+              You do not need to be logged in.
             </span>
           </div>
         </div>

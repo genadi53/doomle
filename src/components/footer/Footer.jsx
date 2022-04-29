@@ -1,7 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "./Footer.module.scss";
 
 function Footer() {
+  const navigate = useNavigate();
+
   return (
     <footer className={styles["page-footer"]}>
       <p className="helplink"></p>
@@ -11,7 +14,13 @@ function Footer() {
       </div>
       <div className={styles["sitelink"]}>
         <a title="Moodle" href="http://moodle.org/">
-          <img src="Doomle.png" alt="Moodle logo" />
+          <img
+            src="Doomle.png"
+            alt="Moodle logo"
+            onClick={() => {
+              navigate("/");
+            }}
+          />
         </a>
       </div>
       <a

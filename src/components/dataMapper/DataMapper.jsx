@@ -51,7 +51,9 @@ function DataMapper() {
             const vals = Object.values(el);
             const res = vals.map((value, idx) => (
               <td className={styles["table-data"]} key={idx}>
-                {value}
+                {value && value / value === 1
+                  ? Math.round(value * 100) / 100
+                  : value}
               </td>
             ));
             return (
